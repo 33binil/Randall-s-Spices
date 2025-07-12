@@ -24,11 +24,11 @@ const App = () => {
 
         const hideHomeTimer = setTimeout(() => {
             setHideHome(true); // Triggers fade out
-        }, 7300); // After 3s
+        }, 6500); // After 3s
 
         const home2Timer = setTimeout(() => {
             setShowHome2(true);
-        }, 7800); // 👈 500ms after Home fade
+        }, 6500); // 👈 500ms after Home fade
 
         return () => {
             clearTimeout(loadingSlideTimer);
@@ -75,7 +75,7 @@ const App = () => {
                         duration: 1.8, // feel free to adjust
                         ease: [0.25, 0.1, 0.25, 1] // 👈 smoother, more linear-style ease
                     }}
-                    className="absolute top-0 left-0 w-screen h-screen z-30"
+                    className="relative top-0 left-0 "
                 >
                     <Home2 />
                 </motion.div>

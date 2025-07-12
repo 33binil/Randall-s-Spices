@@ -10,11 +10,10 @@ const Home = () => {
 
             {/* Full background image */}
             <div
-                className="absolute inset-0 bg-center bg-cover pointer-events-none"
+                className="absolute inset-0 bg-center bg-cover pointer-events-none z-0"
                 style={{
-                    backgroundImage: "url('/Home.jpg')",
+                    backgroundImage: 'url("https://raw.githubusercontent.com/33binil/Randall-s-Spices/main/public/Home.jpg")',
                     opacity: 0.15,
-                    zIndex: 0,
                 }}
             />
 
@@ -24,67 +23,31 @@ const Home = () => {
                 {/* Logo */}
                 <div className="absolute top-0 md:top-6 left-4 md:left-12">
                     <img
-                        src="/public/logo1.png"
+                        src="https://raw.githubusercontent.com/33binil/Randall-s-Spices/main/public/logo1.png"
                         alt="Omniblend Logo"
                         className="w-20 md:w-[120px] h-20 md:h-[120px] object-contain"
                     />
                 </div>
 
-                {/* Navigation */}
-                <div className="absolute top-12 left-1/2 transform -translate-x-1/2">
-                    <h1 className="font-inknut text-white space-x-64 text-[12px] md:text-[17px] font-bold">
-                        <span>HOME</span>
-                        <span>ABOUT US</span>
-                        <span>CONTACT US</span>
-                    </h1>
-                </div>
-
                 {/* Marquee Text */}
-                <div className="absolute top-[575px] w-full">
+                <div className="absolute top-[440px] md:top-[500px] w-full">
                     <div className="marquee whitespace-nowrap">
-                        <h2 className="font-rubikDoodle text-white text-3xl sm:text-[124px] inline-block">
+                        <h2 className="font-rubikDoodle text-white text-[70px] md:text-[124px] inline-block">
                             OMNIBLEND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OMNIBLEND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OMNIBLEND
                         </h2>
-                        <h2 className="font-rubikDoodle text-white text-3xl sm:text-[124px] inline-block">
+                        <h2 className="font-rubikDoodle text-white text-[70px] md:text-[124px] inline-block">
                             OMNIBLEND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OMNIBLEND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OMNIBLEND
                         </h2>
                     </div>
                 </div>
 
                 {/* Scroll-Reactive Image */}
-                <div className="relative w-full top-[110px] flex justify-center py-12">
+                <div className="relative w-full flex justify-center py-12">
                     <motion.img
-                        src="/omniblend.png"
+                        src="https://raw.githubusercontent.com/33binil/Randall-s-Spices/main/public/omniblend.png"
                         alt="Omniblend Center"
                         style={{ y: imageY }}
-                        className="w-40 h-40 md:w-[621px] md:h-[753px]"
-                    />
-                </div>
-
-
-                {/* Centered Description */}
-                <div className="relative w-full left-96 min-h-screen flex items-center justify-center px-4 md:px-14">
-                    <h1
-                        className="font-inknut text-white text-xl md:text-[24px] max-w-[900px] text-center leading-relaxed font-semibold"
-                        style={{ lineHeight: "57px" }}
-                    >
-                        OmniBlend is our all‑in‑one spice innovation—meticulously balanced ingredients, 20+ from smoked paprika to real sumac, crushed and powdered for maximum depth and texture. Whether you’re grilling, roasting, stir‑frying, or sprinkling on snacks, one shake transforms any meal into a masterpiece.
-                    </h1>
-                </div>
-
-                {/* CTA Box */}
-                <div className="w-full flex justify-center items-center mb-56">
-                    <div className="bg-[#582F00] text-white px-8 py-4 rounded-lg shadow-lg text-center">
-                        <h2 className="font-bold text-xl md:text-2xl tracking-wide">Ready to Buy →️</h2>
-                    </div>
-                </div>
-
-                {/* Bottom Image */}
-                <div className="relative right-5 w-[1940px] h-[522px] px-4 md:px-12">
-                    <img
-                        src="/public/Bottom page.jpg"
-                        alt="Herbs and Spices Poster"
-                        className="absolute bottom-0 left-0 w-full h-full object-cover z-0 opacity-45"
+                        className="w-[321px] h-[403px] md:w-[621px] md:h-[753px]"
                     />
                 </div>
             </div>
