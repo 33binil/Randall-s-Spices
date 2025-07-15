@@ -30,7 +30,7 @@ const Home = () => {
                 </div>
 
                 {/* Marquee Text */}
-                <div className="absolute top-[410px] md:top-[500px] w-full">
+                <div className="absolute top-[390px] md:top-[500px] w-full">
                     <div className="marquee whitespace-nowrap">
                         <h2 className="font-rubikDoodle text-white text-[70px] md:text-[124px] inline-block">
                             OMNIBLEND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OMNIBLEND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OMNIBLEND

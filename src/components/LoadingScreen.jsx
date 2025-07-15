@@ -39,7 +39,7 @@ const LoadingScreen = () => {
             />
 
             {/* Countdown number */}
-            <div className="absolute bottom-6 top-[780px] right-12 text-5xl md:text-8xl lg:text-8xl font-bold text-gray-500 px-4 py-2 rounded-lg">
+            <div className="relative bottom-6 top-[780px] right-12 text-5xl md:text-8xl lg:text-8xl font-bold text-gray-500 px-4 py-2 rounded-lg">
                 {String(countdown).padStart(3, '0')}
             </div>
         </div>
