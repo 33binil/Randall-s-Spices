@@ -35,11 +35,11 @@ const LoadingScreen = () => {
             <img
                 src="https://raw.githubusercontent.com/33binil/Randall-s-Spices/main/public/logoo.png"
                 alt="Randall's Harvest Logo"
-                className="w-[225px] md:w-[479px] h-[114px] md:h-[242px] relative z-10"
+                className="relative w-[225px] md:w-[479px] h-[114px] md:h-[242px] relative z-10"
             />
 
             {/* Countdown number */}
-            <div className="relative bottom-6 top-[780px] right-12 text-5xl md:text-8xl lg:text-8xl font-bold text-gray-500 px-4 py-2 rounded-lg">
+            <div className="absolute bottom-6 top-[780px] right-12 text-5xl md:text-8xl lg:text-8xl font-bold text-gray-500 px-4 py-2 rounded-lg">
                 {String(countdown).padStart(3, '0')}
             </div>
         </div>
