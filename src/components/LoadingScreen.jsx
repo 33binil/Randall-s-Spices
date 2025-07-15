@@ -1,17 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 const LoadingScreen = () => {
-    const [countdown, setCountdown] = useState(0);
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    const [countdown, setCountdown] = useState(0); // Starting number
 
     useEffect(() => {
         const totalTime = 6000; // {6000} seconds in milliseconds
@@ -27,19 +17,30 @@ const LoadingScreen = () => {
 
     return (
         <div className="flex items-center justify-center h-screen bg-[#f6f6f4] relative">
-            {/* Loading Image - Positioned at the Top */}
-            <img src="https://raw.githubusercontent.com/33binil/Randall-s-Spices/main/public/Loading.jpg"
-                 alt="Loading image"
-                 className="absolute top-0 md:left-0 right-[251px] object-cover h-full w-full sm:w-auto sm:h-[40vh] md:w-1/4 md:h-full"
-                 style={{ transform: window.innerWidth < 768 ? "rotate(90deg) translateX(-75%)" : "translateX(-10%)", }} />
+            {/* Desktop image */}
+            <img
+                src="https://raw.githubusercontent.com/33binil/Randall-s-Spices/main/public/Loading.jpg"
+                alt="Windows Loading image"
+                className="absolute top-0 md:left-0 object-cover h-full w-[458px] hidden md:block"
+            />
+
+            {/* Mobile image */}
+            <img
+                src="https://raw.githubusercontent.com/33binil/Randall-s-Spices/main/public/Loading2.jpg"
+                alt="Mobile Loading image"
+                className="absolute top-[-10px] object-cover h-[264px] w-[440px] block md:hidden"
+            />
 
             {/* Logo */}
-            <img src="https://raw.githubusercontent.com/33binil/Randall-s-Spices/main/public/logoo.png"
-            alt="Randall's Harvest Logo" className="w-64 h-44 relative z-10 " />
+            <img
+                src="https://raw.githubusercontent.com/33binil/Randall-s-Spices/main/public/logoo.png"
+                alt="Randall's Harvest Logo"
+                className="w-[225px] md:w-[479px] h-[114px] md:h-[242px] relative z-10"
+            />
 
-            {/* Countdown Timer */}
+            {/* Countdown number */}
             <div className="absolute bottom-6 right-6 text-5xl md:text-8xl lg:text-8xl font-bold text-gray-500 px-4 py-2 rounded-lg">
-                {String(countdown).padStart(3, "0")}
+                {String(countdown).padStart(3, '0')}
             </div>
         </div>
     );
