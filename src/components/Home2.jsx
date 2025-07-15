@@ -74,7 +74,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="relative w-[171px] h-[5px] md:w-full md:h-full top-[-210px] md:top-[-400px] justify-center items-center mb-24 md:mb-56">
+                    <div className="relative w-[171px] h-[5px] md:w-full md:h-full top-[-250px] md:top-[-400px] justify-center items-center mb-12 md:mb-56">
                         <button className="bg-[#582F00] text-white px-8 py-4 hover:bg-[#703900] hover:scale-105 rounded-lg shadow-lg transition-colors flex items-center">
                            <h2 className="font-bold text-[12px] md:text-2xl tracking-wide">Ready to Buy →️</h2>
                         </button>
