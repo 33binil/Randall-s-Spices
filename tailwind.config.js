@@ -10,6 +10,7 @@ export default {
         inknut: ['"Inknut Antiqua"', 'serif'],
         rubikDoodle: ['"Rubik Doodle Shadow"', 'cursive'],
         chonburi: ['Chonburi', 'serif'],
+        inria: ['Inria Serif', 'serif'],
       },
     },
   },

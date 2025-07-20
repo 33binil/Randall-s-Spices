@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Home from './components/Home';
 import AboutUs from './components/Aboutus';
 import LoadingScreen from './components/LoadingScreen';
+import Buynow from "./components/Buynow.jsx";
 
 function AppContent() {
     const [showLoading, setShowLoading] = useState(true);
@@ -35,6 +36,7 @@ function AppContent() {
                             <Route path="/" element={<Navigate to="/home" />} />
                             <Route path="/home" element={<Home />} />
                             <Route path="/aboutus" element={<AboutUs />} />
+                            <Route path="/buy" element={<Buynow />} />
                         </Routes>
                     )}
                 </motion.div>

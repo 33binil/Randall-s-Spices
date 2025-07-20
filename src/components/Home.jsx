@@ -81,16 +81,18 @@ const Home2 = () => {
                     />
                 </div>
                 <div>
-                    <h1 className="relative font-inknut text-white top-[60px] md:top-36 text-[16px] md:text-[24px] w-[380px] md:w-[1800px] left-[16px] md:left-[55px] text-center font-semibold leading-[30px] md:leading-[50px] mb-36">
+                    <h1 className="relative font-inknut text-white top-[60px] md:top-36 text-[16px] md:text-[24px] w-[350px] md:w-[1800px] left-[26px] md:left-[55px] text-center font-semibold leading-[30px] md:leading-[50px] mb-36">
                         🌶️ OmniBlend is our signature all‑in‑one spice innovation — an aromatic fusion of over 20 meticulously curated ingredients, from bold smoked paprika and vibrant real sumac to hand-crushed herbs and sun-dried powders. Every grain is crafted for layered complexity, delivering both punch and finesse. <br/><br/>
                         🔥 Whether you're grilling juicy meats, slow-roasting vegetables, stir‑frying noodles, tossing crispy snacks, or seasoning street-style wraps — just one shake infuses your dish with a burst of deep umami, smokiness, tang, and warmth. OmniBlend doesn’t just enhance flavor — it unlocks it.<br/><br/>
                         ✨ Vegan-friendly, gluten-free, and endlessly versatile, it’s your secret weapon for transforming everyday meals into gourmet experiences.
                     </h1>
                 </div>
                 <div className="flex justify-center mt-6 md:mt-48 z-10 mb-56">
+                    <Link to="/buy">
                     <button className="bg-[#582F00] text-white px-8 py-4 hover:bg-[#703900] hover:scale-105 rounded-lg shadow-lg transition-colors">
                         <h2 className="font-bold text-[12px] md:text-2xl tracking-wide">Ready to Buy →️</h2>
                     </button>
+                    </Link>
                 </div>
                 {/* 🔻 Bottom Section */}
                 <div className="w-full bg-transparent px-0 md:px-0 mt-20 md:mt-32">
@@ -120,29 +122,29 @@ const Home2 = () => {
 
                             {/* Bottom Nav */}
                             <div className="relative flex flex-col md:flex-row justify-center mt-[-80px] md:mt-[-140px] gap-9 md:gap-52 mb-16">
-                                <div className="space-y-2 text-center md:text-left">
+                                <div className="text-center md:text-left">
                                     <h1 className="font-inknut text-[13px] md:text-xl font-extrabold">About Us</h1>
                                     <Link to="/aboutus">
                                         <button>
-                                            <h2 className="font-inknut hover:scale-105 transition-transform text-[13px] md:text-xl font-extralight">
+                                            <h2 className="relative top-2 font-inknut hover:scale-105 transition-transform text-[13px] md:text-xl font-extralight">
                                                 Introducing Omniblend
                                             </h2>
                                         </button>
                                     </Link>
                                 </div>
 
-                                <div className="space-y-2 text-center md:text-left">
+                                <div className=" text-center md:text-left">
                                     <h1 className="font-inknut text-[13px] md:text-xl font-extrabold">Home</h1>
                                     <button>
-                                        <h2 className="font-inknut hover:scale-105 transition-transform text-[13px] md:text-xl font-extralight">
+                                        <h2 className="relative top-2 font-inknut hover:scale-105 transition-transform text-[13px] md:text-xl font-extralight">
                                             Ready to Buy
                                         </h2>
                                     </button>
                                 </div>
 
-                                <div className="space-y-2 text-center md:text-left">
+                                <div className="text-center md:text-left">
                                     <h1 className="font-inknut text-[13px] md:text-xl font-extrabold">Contact Us</h1>
-                                    <div className="flex justify-center md:justify-start gap-9 pt-2">
+                                    <div className="relative top-2 flex justify-center md:justify-start gap-9 pt-2">
                                         <FaWhatsapp className="w-5 md:w-8 h-5 md:h-8 hover:scale-110 transition-transform" />
                                         <BiLogoGmail className="w-5 md:w-7 h-5 md:h-7 hover:scale-110 transition-transform" />
                                         <FaInstagram className="w-5 md:w-7 h-5 md:h-7 hover:scale-110 transition-transform" />

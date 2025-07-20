@@ -150,25 +150,25 @@ const About = () => {
 
                         <div className="relative flex flex-col md:flex-row justify-center mt-[-80px] md:mt-[-140px] gap-9 md:gap-52 mb-16">
 
-                            <div className="space-y-2 text-center md:text-left">
+                            <div className=" text-center md:text-left">
 
                                 <h1 className="font-inknut text-[13px] md:text-xl font-extrabold">About Us</h1>
 
                                 <button>
-                                    <h2 className="font-inknut hover:scale-105 transition-transform text-[13px] md:text-xl font-extralight">
+                                    <h2 className="relative top-2 font-inknut hover:scale-105 transition-transform text-[13px] md:text-xl font-extralight">
                                         Introducing Omniblend
                                     </h2>
                                 </button>
 
                             </div>
 
-                            <div className="space-y-2 text-center md:text-left">
+                            <div className=" text-center md:text-left">
 
                                 <h1 className="font-inknut text-[13px] md:text-xl font-extrabold">Home</h1>
 
                                 <Link to="/home">
                                 <button>
-                                    <h2 className="font-inknut hover:scale-105 transition-transform text-[13px] md:text-xl font-extralight">
+                                    <h2 className="relative top-2 font-inknut hover:scale-105 transition-transform text-[13px] md:text-xl font-extralight">
                                         Ready to Buy
                                     </h2>
                                 </button>
@@ -176,11 +176,11 @@ const About = () => {
 
                             </div>
 
-                            <div className="space-y-2 text-center md:text-left">
+                            <div className=" text-center md:text-left">
 
                                 <h1 className="font-inknut text-[13px] md:text-xl font-extrabold">Contact Us</h1>
 
-                                <div className="flex justify-center md:justify-start gap-9 pt-2">
+                                <div className="relative top-2 flex justify-center md:justify-start gap-9 pt-2">
 
                                     <FaWhatsapp className="w-5 md:w-8 h-5 md:h-8 hover:scale-110 transition-transform" />
                                     <BiLogoGmail className="w-5 md:w-7 h-5 md:h-7 hover:scale-110 transition-transform" />
