@@ -18,14 +18,22 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(-50%);
   }
 }
+
+
+.marquee-content {
+  display: inline-block;
+  padding-right: 200px; /* Space between repeated text */
+  animation: scrollLoop 15s linear infinite;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
